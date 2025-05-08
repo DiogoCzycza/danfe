@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Fiscal Simples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Container centralizado */
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #aaa;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #e0e0e0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .assinatura {
+            height: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Título -->
+    <h2>Nota Fiscal Eletrônica (DANFE)</h2>
+
+    <!-- Dados do Emitente e da Nota -->
+    <table>
+        <tr>
+            <th>Emitente</th>
+            <th>Número da NF-e</th>
+            <th>Chave de Acesso</th>
+        </tr>
+        <tr>
+            <td>
+                Diogo Czycza Comércio de Calçados ME<br>
+                CNPJ: 12.345.678/0001-99<br>
+                IE: 123.456.789.000<br>
+                Rua das Palmeiras, 100 - Centro<br>
+                São Paulo - SP | CEP: 01000-000
+            </td>
+            <td>000239857</td>
+            <td>5235 2527 7754 3845 6347 3444 4342 3456 7890 1234</td>
+        </tr>
+    </table>
+
+    <!-- Logo da empresa (imagem fictícia) -->
+    <div class="logo">
+        <img src="adidas.png" alt="Logo Adidas" width="200">
+    </div>
+
+    <!-- Produtos vendidos -->
+    <table>
+        <tr>
+            <th>Quantidade</th>
+            <th>Descrição do Produto / Serviço</th>
+            <th>Valor Unitário</th>
+            <th>Valor Total</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Tênis Adidas Ultraboost 22 - Cor: Preto - Tam: 42</td>
+            <td>R$ 799,99</td>
+            <td>R$ 799,99</td>
+        </tr>
+    </table>
+
+    <!-- Rodapé com autenticação e assinatura -->
+    <table>
+        <tr>
+            <th>Total Impostos</th>
+            <th>Autenticação</th>
+            <th>Assinatura</th>
+        </tr>
+        <tr>
+            <td>R$ 127,99 (16%)</td>
+            <td>
+                Documento autorizado via SEFAZ-SP<br>
+                Protocolo: 135020240000123<br>
+                Data: 20/04/2025 10:32:45
+            </td>
+            <td class="assinatura">
+                ___________________________<br>
+                Assinatura do Emitente
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>
